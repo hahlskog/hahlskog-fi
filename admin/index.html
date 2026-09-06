@@ -1,1 +1,52 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Hahlskog.fi – tapahtumien hallinta</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <main class="admin-shell">
+    <section class="admin-card login-card" id="login-view">
+      <a class="back-link" href="../">← Takaisin sivustolle</a>
+      <p class="eyebrow">Hahlskog.fi</p>
+      <h1>Tapahtumien hallinta</h1>
+      <p class="lead">Tämä hallintanäkymä on valmisteltu tapahtumien lisäämistä, muokkaamista ja poistamista varten.</p>
+      <form id="login-form" class="admin-form">
+        <label>Sähköposti
+          <input type="email" value="hahlskog@gmail.com" autocomplete="username" readonly>
+        </label>
+        <label>Salasana
+          <input type="password" placeholder="••••••••" autocomplete="current-password" disabled>
+        </label>
+        <button class="button" type="submit" disabled>Kirjaudu sisään</button>
+      </form>
+      <div class="notice">
+        <strong>Kirjautuminen kytketään seuraavaksi.</strong>
+        <span>Salasanaa ei tallenneta tähän sivustoon tai GitHub-repoon. Turvallinen kirjautuminen toteutetaan erillisellä taustapalvelulla.</span>
+      </div>
+    </section>
 
+    <section class="admin-card preview-card" aria-label="Tulevan hallintapaneelin esikatselu">
+      <div class="panel-head">
+        <div><p class="eyebrow">Esikatselu</p><h2>Lisää tapahtuma</h2></div>
+        <span class="status">Ei vielä käytössä</span>
+      </div>
+      <div class="event-form-preview">
+        <div class="two-col"><label>Päivämäärä<input type="date" disabled></label><label>Kellonaika<input type="text" placeholder="11:00–14:00" disabled></label></div>
+        <div class="two-col"><label>Otsikko FI<input type="text" disabled></label><label>Otsikko SV<input type="text" disabled></label></div>
+        <div class="two-col"><label>Paikka FI<input type="text" disabled></label><label>Paikka SV<input type="text" disabled></label></div>
+        <label>Kuvaus FI<textarea rows="3" disabled></textarea></label>
+        <label>Kuvaus SV<textarea rows="3" disabled></textarea></label>
+        <button class="button" disabled>Julkaise tapahtuma</button>
+      </div>
+      <hr>
+      <h2>Tapahtumat</h2>
+      <div class="empty">Ei vielä julkaistuja tapahtumia.</div>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>
