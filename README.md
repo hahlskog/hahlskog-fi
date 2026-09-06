@@ -1,33 +1,23 @@
-# hahlskog.fi – ensimmäinen sivustoversio
+# hahlskog.fi – GitHub Pages + admin-pohja
 
-Tämä paketti on valmis julkaistavaksi Cloudflare Pagesissa suoraan repositoryn juuresta.
+Tämä paketti on tarkoitettu GitHub Pagesissa julkaistavaan `hahlskog-fi`-repositoryyn.
 
-## Tiedostot
+## Mukana
 
 - `index.html` – suomenkielinen sivu
 - `sv/index.html` – ruotsinkielinen sivu
-- `assets/styles.css` – ulkoasu
-- `assets/site.js` – mobiilivalikko
-- `data/events.json` – tapahtumatietojen pohja myöhempää CMS-kytkentää varten
+- `assets/` – sivuston tyylit ja JavaScript
+- `data/events.json` – tapahtumalista (tässä versiossa tyhjä)
+- `admin/` – tapahtumahallinnan käyttöliittymäpohja
+- `.nojekyll` – GitHub Pagesia varten
 
-## GitHubiin vienti selaimella
+## Tapahtumat
 
-1. Avaa `hahlskog-fi` repository GitHubissa.
-2. Valitse **Add file → Upload files**.
-3. Pura ZIP ensin puhelimella/tietokoneella.
-4. Lataa repositoryn juureen **paketin sisällä olevat tiedostot ja kansiot**, ei ulommaista `hahlskog-fi-site`-kansiota.
-5. Commit message: `Add first website version`
-6. Valitse **Commit changes**.
+Tässä paketissa ei ole valmiiksi julkaistuja tapahtumia. `data/events.json` sisältää tyhjän listan `[]`.
+Kun turvallinen admin-kirjautuminen ja tallennus on kytketty, tapahtumat syötetään hallintapaneelista.
 
-Cloudflare Pages julkaisee muutoksen automaattisesti.
+## Admin
 
-## Seuraavat vaiheet
+Admin-pohja löytyy osoitteesta `/admin/`. Nykyisessä paketissa kirjautuminen ja julkaiseminen on tarkoituksella pois käytöstä. Salasanaa ei pidä koskaan tallentaa HTML-, JavaScript- tai GitHub-tiedostoihin.
 
-- Hanna-Lean oikeat valokuvat
-- lopulliset kampanjatekstit FI/SV
-- sähköposti- ja someosoitteet
-- oikea KD-logo
-- `/admin`-sisällönhallinta
-- tapahtumien automaattinen listaus
-- UusiSuomi-kirjoitusten mahdollinen automaattinen haku
-- hahlskog.fi-domainin liittäminen Cloudflare Pagesiin
+Seuraava vaihe on kytkeä admin turvalliseen taustapalveluun (esim. Cloudflare Worker), joka hoitaa autentikoinnin ja `events.json`-tiedoston päivittämisen.
