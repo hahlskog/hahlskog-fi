@@ -62,7 +62,7 @@ display:flex;align-items:center;justify-content:center}
 .section-head{max-width:760px;margin-bottom:36px}
 .cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .policy-card,.event-card,.article-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 24px rgba(11,47,91,.05)}
-.policy-num{color:var(--orange);font-weight:900;font-size:1.35rem;margin-bottom:16px}
+.policy-icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#fff3e8;color:var(--orange);font-weight:900;font-size:1.35rem;margin-bottom:16px;box-shadow:0 5px 16px rgba(230,107,31,.12)}
 .policy-card p,.event-card p,.article-card p{color:#52627a;margin-bottom:0}
 .events-wrap{display:grid;grid-template-columns:.75fr 1.65fr;gap:38px;align-items:start}
 .events-list{display:grid;gap:14px}
