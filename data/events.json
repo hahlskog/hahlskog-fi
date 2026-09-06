@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "date": "2026-11-07",
+    "time": "11:00–14:00",
+    "title": {
+      "fi": "Toritapahtuma",
+      "sv": "Torgevenemang"
+    },
+    "place": {
+      "fi": "Kokkolan tori",
+      "sv": "Karleby torg"
+    },
+    "description": {
+      "fi": "Tarjoilua, onnenpyörä ja mukana myös muita alueen ehdokkaita.",
+      "sv": "Servering, lyckohjul och även andra kandidater från området medverkar."
+    }
+  }
+]
