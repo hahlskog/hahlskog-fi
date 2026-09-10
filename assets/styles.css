@@ -282,3 +282,11 @@ body{background:#fff;color:#14283b}
   .article-card:first-child .article-thumb,.article-thumb{height:210px}
   .about-feature,.about-feature img{height:300px;max-height:300px}
 }
+
+.about-feature-side{grid-column:auto;align-self:stretch;max-height:none;border-radius:14px}
+.about-feature-side img{height:100%;min-height:330px;max-height:430px;object-fit:cover}
+.policy-card p{max-width:52ch}
+@media(max-width:900px){
+  .about-feature-side{grid-column:1}
+  .about-feature-side img{height:320px;min-height:0}
+}
